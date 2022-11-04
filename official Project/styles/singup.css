@@ -1,0 +1,39 @@
+.singupword{
+    color: #6667AB;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 30px;
+}
+.inputs{
+    width: 526px;
+    height: 58px;
+    border: 2px solid #6667AB;
+    border-radius: 10px;
+}
+.inputsword{
+    font-weight: 700;
+font-size: 16px;
+margin-top: 25px;
+padding-left: 20px;
+padding-right: 370px;
+}
+.spaces{
+    margin-top: 25px;
+}
+.Add_button{
+    background-color: #6667AB;
+    color: #FFFFFF;
+    padding: 7px 17px;
+    border-radius: 10px;
+    border-color: #6667AB;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 8%;
+}
+.aline{
+    text-align: center;
+}
+.size_bnt_login{
+padding: 10px 40px;
+}

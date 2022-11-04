@@ -1,0 +1,617 @@
+<html>
+  <head>
+    <title>Card</title>
+
+    <!-- bootstrap links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/Card.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/bootstrap-shopping-carts.min.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+  </head>
+
+  <body>
+    <div class="overlay" data-overlay></div>
+    <!-- header -->
+    <header>
+      <div class="header-main">
+        <div class="container">
+          <a href="#" class="header-logo">
+            <img
+              src="./images/logo.svg"
+              alt="Anon's logo"
+              width="120"
+              height="36"
+            />
+          </a>
+
+          <div class="header-search-container">
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="Enter your product name..."
+            />
+
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="header-user-actions">
+            <button class="action-btn">
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav bar  -->
+      <nav class="desktop-navigation-menu">
+        <div class="container">
+          <ul class="desktop-menu-category-list">
+            <li class="menu-category">
+              <a href="#" class="menu-title">Home</a>
+            </li>
+            <li class="menu-category">
+              <a href="#" class="menu-title">Categories</a>
+
+              <div class="dropdown-panel">
+                <ul class="dropdown-panel-list">
+                  <li class="menu-title">
+                    <a href="#">ExternalParts</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">Filters</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">Belts</a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-panel-list">
+                  <li class="menu-title">
+                    <a href="#">Bearings</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">ACandCoolingsystem</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">SuspensionandBrakes</a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-panel-list">
+                  <li class="menu-title">
+                    <a href="#">EngineParts</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">BrakeDiscs</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">ShockAbsorber</a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-panel-list">
+                  <li class="menu-title">
+                    <a href="#">WiperBlade</a>
+                  </li>
+                  <li class="menu-title">
+                    <a href="#">Other</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Cars</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#"> Kai</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Hyundai</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Toyota</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Lada</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Skoda</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Nissan</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Fiat</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#"> Opel</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">BMW</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Other</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Besst seller</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mobile-bottom-navigation">
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
+        <button class="action-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+
+          <span class="count">0</span>
+        </button>
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+      </div>
+
+      <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+        <div class="menu-top">
+          <h2 class="menu-title">Menu</h2>
+
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="mobile-menu-category-list">
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Men's</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Shirt</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Shorts & Jeans</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Safety Shoes</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Wallet</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Women's</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Dress & Frock</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Earrings</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Necklace</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Makeup Kit</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Jewelry</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Earrings</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Couple Rings</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Necklace</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Bracelets</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Perfume</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Clothes Perfume</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Deodorant</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Flower Fragrance</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Air Freshener</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+        </ul>
+
+        <div class="menu-bottom">
+          <ul class="menu-category-list">
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Language</p>
+
+                <ion-icon
+                  name="caret-back-outline"
+                  class="caret-back"
+                ></ion-icon>
+              </button>
+
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">English</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Fren&ccedil;h</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Currency</p>
+                <ion-icon
+                  name="caret-back-outline"
+                  class="caret-back"
+                ></ion-icon>
+              </button>
+
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">USD &dollar;</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">EUR &euro;</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="menu-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="h-100 h-custom" style="background-color: #eee">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card shopping-cart" style="border-radius: 15px">
+              <div class="card-body text-black">
+                <div class="row">
+                  <div class="col-lg-6 px-5 py-4">
+                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">
+                      Your products
+                    </h3>
+
+                    <div class="d-flex align-items-center mb-5">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="./images/1.webp"
+                          class="img-fluid"
+                          style="width: 150px"
+                          alt="Generic placeholder image"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <a href="#!" class="float-end text-danger"
+                          ><i class="fas fa-trash fa-lg"></i
+                        ></a>
+                        <h5 class="">Name</h5>
+                        <h6 style="color: #9e9e9e">Model No</h6>
+                        <div class="d-flex align-items-center">
+                          <p class="fw-bold mb-0 me-5 pe-3">799 EGP</p>
+                          <div
+                            class="def-number-input number-input safari_only"
+                          >
+                            <button
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                              class="minus"
+                            ></button>
+                            <input
+                              class="quantity fw-bold text-black"
+                              min="0"
+                              name="quantity"
+                              value="1"
+                              type="number"
+                            />
+                            <button
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                              class="plus"
+                            ></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-5">
+                      <div class="flex-shrink-0">
+                        <img
+                          src="./images/1.webp"
+                          class="img-fluid"
+                          style="width: 150px"
+                          alt="Generic placeholder image"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <a href="#!" class="float-end text-danger"
+                          ><i class="fas fa-trash fa-lg"></i
+                        ></a>
+                        <h5 class="">Name</h5>
+                        <h6 style="color: #9e9e9e">Model No</h6>
+                        <div class="d-flex align-items-center">
+                          <p class="fw-bold mb-0 me-5 pe-3">239 EGP</p>
+                          <div
+                            class="def-number-input number-input safari_only"
+                          >
+                            <button
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                              class="minus"
+                            ></button>
+                            <input
+                              class="quantity fw-bold text-black"
+                              min="0"
+                              name="quantity"
+                              value="1"
+                              type="number"
+                            />
+                            <button
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                              class="plus"
+                            ></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr
+                      class="mb-4"
+                      style="
+                        height: 2px;
+                        background-color: hsla(239, 29%, 54%, 1);
+                        opacity: 1;
+                      "
+                    />
+
+                    <div
+                      class="d-flex justify-content-between p-2 mb-2"
+                      style="background-color: #e9f4fa"
+                    >
+                      <h5 class="fw-bold mb-0">Total:</h5>
+                      <h5 class="fw-bold mb-0">2261 EGP</h5>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 px-5 py-4">
+                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">
+                      Details for Shipping
+                    </h3>
+
+                    <form class="mb-5">
+                      <div class="form-outline mb-5">
+                        <input
+                          type="text"
+                          id="typeText"
+                          class="form-control form-control-lg"
+                          siez="17"
+                          value=""
+                          minlength="19"
+                          maxlength="19"
+                        />
+                        <label class="form-label" for="typeText"
+                          >Full Name</label
+                        >
+                      </div>
+
+                      <div class="form-outline mb-5">
+                        <input
+                          type="text"
+                          id="typeName"
+                          class="form-control form-control-lg"
+                          siez="17"
+                          value=""
+                        />
+                        <label class="form-label" for="typeName"
+                          >Mobile No</label
+                        >
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6 mb-5">
+                          <div class="form-outline">
+                            <input
+                              type="text"
+                              id="typeExp"
+                              class="form-control form-control-lg"
+                              value=""
+                              size="7"
+                              id="exp"
+                              minlength="7"
+                              maxlength="7"
+                            />
+                            <label class="form-label" for="typeExp"
+                              >Loction</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                          <div class="form-outline">
+                            <input
+                              type="text"
+                              id="typeText"
+                              class="form-control form-control-lg"
+                              value=""
+                              size="1"
+                              minlength="3"
+                              maxlength="3"
+                            />
+                            <label class="form-label" for="typeText"
+                              >ZIP Code</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn btnContact btn-block btn-lg"
+                      >
+                        Buy now
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
